@@ -39,6 +39,9 @@ a
             <h4>Service name:</h4>
             <h4>Logs from body:</h4>
 
+            <form :action="clicked.link">
+              <button type="submit" class="btn btn-outline-secondary">Go to system</button>
+            </form>
           </div>
           <div class="col-md-4">
             <h4>{{clicked.isup}}</h4>
@@ -85,6 +88,9 @@ a
     methods: {
       clickedStatus: function (service) {
         this.clicked = service;
+      },
+      gotoLink: function () {
+
       }
     }
   }
